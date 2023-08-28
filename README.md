@@ -32,7 +32,7 @@ Before starting the build process, make sure you have [Python 3](https://www.pyt
 1. Download this repository as a zip file and extract it.
 2. In extracted folder, open the terminal and run:
 
-```sh
+```console
 pip install -r requirements.txt
 pyinstaller main.pyw --onefile --name=Ghost_Autoclicker --icon=icon.ico
 ```
