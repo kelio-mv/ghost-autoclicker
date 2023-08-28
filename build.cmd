@@ -1,0 +1,1 @@
+pyinstaller main.pyw --onefile --icon=icon.ico
