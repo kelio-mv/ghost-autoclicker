@@ -15,7 +15,7 @@ You may also get banned if you exceed the maximum clicking speed of the server a
 
 # Download
 
-Download it here: [Ghost_Autoclicker.exe](https://github.com/kelio-mv/ghost-autoclicker/releases/download/v1.0/Ghost_Autoclicker.exe)
+Download it here: [Ghost_Autoclicker.exe](https://github.com/kelio-mv/ghost-autoclicker/releases/download/v1.1/Ghost_Autoclicker.exe)
 
 # Usage
 
