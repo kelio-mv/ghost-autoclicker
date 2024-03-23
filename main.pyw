@@ -59,14 +59,14 @@ class Window(QMainWindow):
         checkbox_layout = QHBoxLayout()
         checkbox_layout.addWidget(self.hold_checkbox, alignment=Qt.AlignCenter)
 
-        self.label_hotkeys = QLabel("Mouse hotkeys: Scroll / x1 / x2")
-        self.label_hotkeys.setAlignment(Qt.AlignCenter)
-        self.label_hotkeys.setFont(QFont("Segoe UI", 11))
+        self.label_buttons = QLabel("Use buttons: Middle, Forward or Back")
+        self.label_buttons.setAlignment(Qt.AlignCenter)
+        self.label_buttons.setFont(QFont("Segoe UI", 10))
 
         layout.addWidget(self.label_speed)
         layout.addWidget(self.slider)
         layout.addLayout(checkbox_layout)
-        layout.addWidget(self.label_hotkeys)
+        layout.addWidget(self.label_buttons)
 
         widget.setLayout(layout)
         self.setCentralWidget(widget)
@@ -87,11 +87,9 @@ class Window(QMainWindow):
         self.hold_to_click = self.hold_checkbox.isChecked()
 
     def wait_timeout(self):
+        # The sleep function seems accurate now, let's try it out!
         timeout = random.uniform(self.timeout["min"], self.timeout["max"])
-        start_time = time.time()
-
-        while time.time() - start_time < timeout:
-            continue
+        time.sleep(timeout)
 
     def update(self):
         while True:
